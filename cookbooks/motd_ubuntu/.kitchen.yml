@@ -1,0 +1,26 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: MyEC2Key
+  security_group_ids: ["sg-f053f596"]
+  region: us-west-2
+  shared_credentials_profile: sandbox
+  iam_profile_name: Admin
+
+transport:
+ ssh_key: /vagrant/learn-chef/MyEC2Key.pem
+ connection_timeout: 10
+ connection_retries: 5
+ username: ubuntu 
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[motd_ubuntu::default]
+    attributes:

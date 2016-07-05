@@ -1,0 +1,70 @@
+I, [2016-07-05T00:10:31.555693 #5421]  INFO -- Kitchen: -----> Starting Kitchen (v1.10.0)
+I, [2016-07-05T00:10:31.980021 #5421]  INFO -- Kitchen: -----> Converging <default-ubuntu-1404>...
+E, [2016-07-05T00:10:40.795503 #5421] ERROR -- Kitchen: ------Exception-------
+E, [2016-07-05T00:10:40.796348 #5421] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-07-05T00:10:40.796691 #5421] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Converge failed on instance <default-ubuntu-1404>.  Please see .kitchen/logs/default-ubuntu-1404.log for more details
+E, [2016-07-05T00:10:40.796917 #5421] ERROR -- Kitchen: ----------------------
+E, [2016-07-05T00:10:40.797092 #5421] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-07-05T00:10:40.797260 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:187:in `report_errors'
+E, [2016-07-05T00:10:40.797521 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:178:in `run_action'
+E, [2016-07-05T00:10:40.797705 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command/action.rb:39:in `block in call'
+E, [2016-07-05T00:10:40.797889 #5421] ERROR -- Kitchen: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-07-05T00:10:40.798065 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command/action.rb:37:in `call'
+E, [2016-07-05T00:10:40.798308 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/cli.rb:56:in `perform'
+E, [2016-07-05T00:10:40.798515 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/cli.rb:184:in `block (2 levels) in <class:CLI>'
+E, [2016-07-05T00:10:40.798699 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2016-07-05T00:10:40.798957 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2016-07-05T00:10:40.799181 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/cli.rb:325:in `invoke_task'
+E, [2016-07-05T00:10:40.799467 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2016-07-05T00:10:40.799694 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2016-07-05T00:10:40.799956 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2016-07-05T00:10:40.800251 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/errors.rb:174:in `with_friendly_errors'
+E, [2016-07-05T00:10:40.800449 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/bin/kitchen:13:in `<top (required)>'
+E, [2016-07-05T00:10:40.800642 #5421] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `load'
+E, [2016-07-05T00:10:40.800818 #5421] ERROR -- Kitchen: /usr/local/bin/kitchen:23:in `<main>'
+E, [2016-07-05T00:10:40.800992 #5421] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-07-05T00:10:40.801729 #5421] ERROR -- Kitchen: -Composite Exception--
+E, [2016-07-05T00:10:40.802142 #5421] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
+E, [2016-07-05T00:10:40.802570 #5421] ERROR -- Kitchen: Message: Converge failed on instance <default-ubuntu-1404>.  Please see .kitchen/logs/default-ubuntu-1404.log for more details
+E, [2016-07-05T00:10:40.803101 #5421] ERROR -- Kitchen: ----------------------
+E, [2016-07-05T00:10:40.803456 #5421] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-07-05T00:10:40.803869 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-07-05T00:10:40.804261 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-07-05T00:10:40.804559 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-07-05T00:10:40.805073 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-07-05T00:10:40.805994 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-07-05T00:10:40.806410 #5421] ERROR -- Kitchen: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-07-05T00:10:40.808552 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:477:in `action'
+E, [2016-07-05T00:10:40.809012 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-07-05T00:10:40.809309 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-07-05T00:10:40.809487 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-07-05T00:10:40.809807 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-07-05T00:10:40.810063 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-07-05T00:10:40.810254 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-07-05T00:10:40.810436 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-07-05T00:10:40.810617 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-07-05T00:10:40.810858 #5421] ERROR -- Kitchen: ----End Backtrace-----
+E, [2016-07-05T00:10:40.811038 #5421] ERROR -- Kitchen: ---Nested Exception---
+E, [2016-07-05T00:10:40.811215 #5421] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2016-07-05T00:10:40.811388 #5421] ERROR -- Kitchen: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2016-07-05T00:10:40.811564 #5421] ERROR -- Kitchen: ----------------------
+E, [2016-07-05T00:10:40.811756 #5421] ERROR -- Kitchen: ------Backtrace-------
+E, [2016-07-05T00:10:40.811932 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-07-05T00:10:40.812133 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-07-05T00:10:40.812326 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-07-05T00:10:40.812493 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-07-05T00:10:40.812695 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-07-05T00:10:40.812929 #5421] ERROR -- Kitchen: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-07-05T00:10:40.813161 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:477:in `action'
+E, [2016-07-05T00:10:40.813377 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-07-05T00:10:40.813631 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-07-05T00:10:40.813854 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-07-05T00:10:40.814337 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-07-05T00:10:40.815005 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-07-05T00:10:40.815338 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-07-05T00:10:40.815547 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-07-05T00:10:40.815846 #5421] ERROR -- Kitchen: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-07-05T00:10:40.816099 #5421] ERROR -- Kitchen: ----End Backtrace-----

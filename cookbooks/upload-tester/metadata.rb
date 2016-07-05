@@ -1,0 +1,7 @@
+name 'upload-tester'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures upload-tester'
+long_description 'Installs/Configures upload-tester'
+version '0.1.0'

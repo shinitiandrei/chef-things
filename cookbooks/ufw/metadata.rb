@@ -1,0 +1,7 @@
+name 'ufw'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures ufw'
+long_description 'Installs/Configures ufw'
+version '0.1.0'

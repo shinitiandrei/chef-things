@@ -1,0 +1,7 @@
+DEPENDENCIES
+  ufw
+    path: .
+    metadata: true
+
+GRAPH
+  ufw (0.1.0)

@@ -1,0 +1,84 @@
+I, [2016-07-05T00:10:31.980169 #5421]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-07-05T00:10:31.983500 #5421]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-07-05T00:10:31.985276 #5421]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-07-05T00:10:31.987298 #5421]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 4.3.5...
+I, [2016-07-05T00:10:32.165742 #5421]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-07-05T00:10:32.180960 #5421]  INFO -- default-ubuntu-1404: Preparing solo.rb
+I, [2016-07-05T00:10:34.546317 #5421]  INFO -- default-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-07-05T00:10:34.881101 #5421]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-07-05T00:10:38.735300 #5421]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.11.18
+I, [2016-07-05T00:10:39.999813 #5421]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["motd_ubuntu::default"]
+I, [2016-07-05T00:10:40.013633 #5421]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-07-05T00:10:40.015942 #5421]  INFO -- default-ubuntu-1404:   - motd_ubuntu (0.1.0)
+I, [2016-07-05T00:10:40.019202 #5421]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-07-05T00:10:40.163126 #5421]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-07-05T00:10:40.164112 #5421]  INFO -- default-ubuntu-1404: 
+I, [2016-07-05T00:10:40.165165 #5421]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2016-07-05T00:10:40.166363 #5421]  INFO -- default-ubuntu-1404: Recipe Compile Error
+I, [2016-07-05T00:10:40.167430 #5421]  INFO -- default-ubuntu-1404: ================================================================================
+I, [2016-07-05T00:10:40.168628 #5421]  INFO -- default-ubuntu-1404: 
+I, [2016-07-05T00:10:40.170261 #5421]  INFO -- default-ubuntu-1404: Chef::Exceptions::RecipeNotFound
+I, [2016-07-05T00:10:40.171301 #5421]  INFO -- default-ubuntu-1404: --------------------------------
+I, [2016-07-05T00:10:40.172275 #5421]  INFO -- default-ubuntu-1404: could not find recipe default for cookbook motd_ubuntu
+I, [2016-07-05T00:10:40.174295 #5421]  INFO -- default-ubuntu-1404: 
+I, [2016-07-05T00:10:40.176250 #5421]  INFO -- default-ubuntu-1404: Platform:
+I, [2016-07-05T00:10:40.178209 #5421]  INFO -- default-ubuntu-1404: ---------
+I, [2016-07-05T00:10:40.179369 #5421]  INFO -- default-ubuntu-1404: x86_64-linux
+I, [2016-07-05T00:10:40.181153 #5421]  INFO -- default-ubuntu-1404: 
+I, [2016-07-05T00:10:40.182796 #5421]  INFO -- default-ubuntu-1404: 
+I, [2016-07-05T00:10:40.185006 #5421]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-07-05T00:10:40.186756 #5421]  INFO -- default-ubuntu-1404: [2016-07-05T00:10:39+00:00] ERROR: Running exception handlers
+I, [2016-07-05T00:10:40.188657 #5421]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-07-05T00:10:40.191798 #5421]  INFO -- default-ubuntu-1404: [2016-07-05T00:10:39+00:00] ERROR: Exception handlers complete
+I, [2016-07-05T00:10:40.194609 #5421]  INFO -- default-ubuntu-1404: Chef Client failed. 0 resources updated in 01 seconds
+I, [2016-07-05T00:10:40.197168 #5421]  INFO -- default-ubuntu-1404: [2016-07-05T00:10:39+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2016-07-05T00:10:40.199722 #5421]  INFO -- default-ubuntu-1404: [2016-07-05T00:10:39+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2016-07-05T00:10:40.201925 #5421]  INFO -- default-ubuntu-1404: [2016-07-05T00:10:39+00:00] ERROR: could not find recipe default for cookbook motd_ubuntu
+I, [2016-07-05T00:10:40.722720 #5421]  INFO -- default-ubuntu-1404: [2016-07-05T00:10:40+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2016-07-05T00:10:40.766473 #5421] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2016-07-05T00:10:40.767667 #5421] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2016-07-05T00:10:40.768412 #5421] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2016-07-05T00:10:40.768773 #5421] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2016-07-05T00:10:40.769321 #5421] ERROR -- default-ubuntu-1404: ----------------------
+E, [2016-07-05T00:10:40.769757 #5421] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2016-07-05T00:10:40.770208 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-07-05T00:10:40.770640 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-07-05T00:10:40.770939 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-07-05T00:10:40.771141 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-07-05T00:10:40.771344 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-07-05T00:10:40.771609 #5421] ERROR -- default-ubuntu-1404: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-07-05T00:10:40.771839 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:477:in `action'
+E, [2016-07-05T00:10:40.772156 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-07-05T00:10:40.772499 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-07-05T00:10:40.772765 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-07-05T00:10:40.773026 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-07-05T00:10:40.773453 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-07-05T00:10:40.773810 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-07-05T00:10:40.774138 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-07-05T00:10:40.774503 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-07-05T00:10:40.774776 #5421] ERROR -- default-ubuntu-1404: ----End Backtrace-----
+E, [2016-07-05T00:10:40.775072 #5421] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2016-07-05T00:10:40.775476 #5421] ERROR -- default-ubuntu-1404: Class: Kitchen::Transport::SshFailed
+E, [2016-07-05T00:10:40.775750 #5421] ERROR -- default-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2016-07-05T00:10:40.776105 #5421] ERROR -- default-ubuntu-1404: ----------------------
+E, [2016-07-05T00:10:40.776407 #5421] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2016-07-05T00:10:40.776729 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-07-05T00:10:40.777061 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-07-05T00:10:40.777397 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-07-05T00:10:40.777683 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-07-05T00:10:40.777936 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-07-05T00:10:40.778148 #5421] ERROR -- default-ubuntu-1404: /usr/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2016-07-05T00:10:40.778356 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:477:in `action'
+E, [2016-07-05T00:10:40.778549 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-07-05T00:10:40.778737 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-07-05T00:10:40.778921 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:347:in `each'
+E, [2016-07-05T00:10:40.779109 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-07-05T00:10:40.779335 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/instance.rb:160:in `verify'
+E, [2016-07-05T00:10:40.779552 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-07-05T00:10:40.779765 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-07-05T00:10:40.779978 #5421] ERROR -- default-ubuntu-1404: /var/lib/gems/2.3.0/gems/test-kitchen-1.10.0/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-07-05T00:10:40.780191 #5421] ERROR -- default-ubuntu-1404: ----End Backtrace-----
